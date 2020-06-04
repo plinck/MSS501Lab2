@@ -247,7 +247,7 @@ namespace Lab2.CWS
                                 ErrorLog.Notice($"{LogHeader} GET Request LOG running ...");
                                 
                                 JSONResponseString = FileControl.ReadFile($"{Directory.GetApplicationRootDirectory()}/User/logfile.txt");
-                                args.Context.Response.Write($"{{ \"log:\" : {JSONResponseString} }}", true);
+                                args.Context.Response.Write($"{{ \"log:\" : \"{JSONResponseString}\" }}", true);
                                 
                                 break;
     
