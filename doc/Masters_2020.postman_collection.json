@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "e6ff4ca7-f474-4c1b-94d8-1d7176d98e27",
+		"name": "Masters 2020",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Level 1 - Hello World",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{YOUR-VC4-HOSTNAME}/VirtualControl/Rooms/LAB1/cws/helloworld/Masters",
+					"protocol": "https",
+					"host": [
+						"{YOUR-VC4-HOSTNAME}"
+					],
+					"path": [
+						"VirtualControl",
+						"Rooms",
+						"LAB1",
+						"cws",
+						"helloworld",
+						"Masters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level 2 - Interlock Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{YOUR-VC4-HOSTNAME}/VirtualControl/Rooms/LAB1/cws/interlockstatus",
+					"protocol": "https",
+					"host": [
+						"{YOUR-VC4-HOSTNAME}"
+					],
+					"path": [
+						"VirtualControl",
+						"Rooms",
+						"LAB1",
+						"cws",
+						"interlockstatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lab 2 - Hola Mundo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"asdasdasd\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{YOUR-VC4-HOSTNAME}/VirtualControl/Rooms/LAB1/cws/holamundo",
+					"protocol": "https",
+					"host": [
+						"{YOUR-VC4-HOSTNAME}"
+					],
+					"path": [
+						"VirtualControl",
+						"Rooms",
+						"LAB1",
+						"cws",
+						"holamundo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level 3 - Post Slider",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"value\": 80}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{YOUR-VC4-HOSTNAME}/VirtualControl/Rooms/LAB1/cws/postslider",
+					"protocol": "https",
+					"host": [
+						"{YOUR-VC4-HOSTNAME}"
+					],
+					"path": [
+						"VirtualControl",
+						"Rooms",
+						"LAB1",
+						"cws",
+						"postslider"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level 3 - Get Slider",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"value\": \"50%\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{YOUR-VC4-HOSTNAME}/VirtualControl/Rooms/LAB1/cws/getslider",
+					"protocol": "https",
+					"host": [
+						"{YOUR-VC4-HOSTNAME}"
+					],
+					"path": [
+						"VirtualControl",
+						"Rooms",
+						"LAB1",
+						"cws",
+						"getslider"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level 3 - Get Log",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"value\": \"50%\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{YOUR-VC4-HOSTNAME}/VirtualControl/Rooms/LAB1/cws/log",
+					"protocol": "https",
+					"host": [
+						"{YOUR-VC4-HOSTNAME}"
+					],
+					"path": [
+						"VirtualControl",
+						"Rooms",
+						"LAB1",
+						"cws",
+						"log"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
