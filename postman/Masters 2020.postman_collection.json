@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "9e380b07-29cd-425a-ae6d-bc07ea3b827a",
+		"name": "Masters 2020",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Level 1 - Hello World",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-18-188-67-188.us-east-2.compute.amazonaws.com/VirtualControl/Rooms/PAULLINCK2/cws/helloworld/Masters",
+					"protocol": "http",
+					"host": [
+						"ec2-18-188-67-188",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"VirtualControl",
+						"Rooms",
+						"PAULLINCK2",
+						"cws",
+						"helloworld",
+						"Masters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level 2 - Interlock Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-18-188-67-188.us-east-2.compute.amazonaws.com/VirtualControl/Rooms/PAULLINCK2/cws/interlockstatus",
+					"protocol": "http",
+					"host": [
+						"ec2-18-188-67-188",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"VirtualControl",
+						"Rooms",
+						"PAULLINCK2",
+						"cws",
+						"interlockstatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lab 2 - Hola Mundo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"Hello, Aloha, Yadayadayada\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-188-67-188.us-east-2.compute.amazonaws.com/VirtualControl/Rooms/PAULLINCK2/cws/holamundo",
+					"protocol": "http",
+					"host": [
+						"ec2-18-188-67-188",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"VirtualControl",
+						"Rooms",
+						"PAULLINCK2",
+						"cws",
+						"holamundo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level 3 - Post Slider",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"value\": 5000}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-188-67-188.us-east-2.compute.amazonaws.com/VirtualControl/Rooms/PAULLINCK2/cws/postslider",
+					"protocol": "http",
+					"host": [
+						"ec2-18-188-67-188",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"VirtualControl",
+						"Rooms",
+						"PAULLINCK2",
+						"cws",
+						"postslider"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level 3 - Get Slider",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"value\": \"50%\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-188-67-188.us-east-2.compute.amazonaws.com/VirtualControl/Rooms/PAULLINCK2/cws/getslider",
+					"protocol": "http",
+					"host": [
+						"ec2-18-188-67-188",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"VirtualControl",
+						"Rooms",
+						"PAULLINCK2",
+						"cws",
+						"getslider"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level 3 - Get Log",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"value\": \"50%\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-188-67-188.us-east-2.compute.amazonaws.com/VirtualControl/Rooms/PAULLINCK2/cws/log",
+					"protocol": "http",
+					"host": [
+						"ec2-18-188-67-188",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"VirtualControl",
+						"Rooms",
+						"PAULLINCK2",
+						"cws",
+						"log"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
