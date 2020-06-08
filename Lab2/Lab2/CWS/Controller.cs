@@ -173,7 +173,7 @@ namespace Lab2.CWS
                         case "/WHATEVER":
                             break;
                         default:
-                            args.Context.Response.StatusCode = 200;
+                            args.Context.Response.StatusCode = 204;
                             args.Context.Response.Write(
                                 JsonConvert.SerializeObject(
                                 new Response

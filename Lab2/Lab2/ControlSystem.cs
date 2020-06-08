@@ -101,7 +101,8 @@ namespace Lab2.CWS
                     }
                 }
 
-                this.controller = new CWS.Controller(this.tp01, "");
+                // e.g. /Rooms/PAULLINCK2/cws/api/interlockstatus/
+                this.controller = new CWS.Controller(this.tp01, "api");
             }
             catch (Exception e)
             {
